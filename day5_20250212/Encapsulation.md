@@ -1,3 +1,5 @@
+## カプセル化
+
 ビジネスロジック層の中で`getter/setter`をむやみに使わない
 
 ![](/images/object2.jpeg)
