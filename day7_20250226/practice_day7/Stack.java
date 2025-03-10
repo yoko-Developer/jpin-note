@@ -6,11 +6,12 @@ public class Stack {
 
     public void push(String value) {
         this.values[this.index] = value;
-            // ++だとnullを返すので--だったらCBAと出力する
-                this.index++;
+        // ++だとnullを返すので--だったらCBAと出力する
+        this.index++;
     }
 
     public String pop() {
+        // --なのでCBAと出力する
         this.index--;
         return this.values[this.index];
     }
