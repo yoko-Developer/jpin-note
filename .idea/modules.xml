@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/englishDictionary.iml" filepath="$PROJECT_DIR$/englishDictionary.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/jpin-note.iml" filepath="$PROJECT_DIR$/.idea/jpin-note.iml" />
     </modules>
   </component>
