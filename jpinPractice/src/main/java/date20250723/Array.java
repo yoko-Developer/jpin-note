@@ -1,3 +1,5 @@
+package date20250723;
+
 public class Array {
     public static void main(String[] args) {
 //      初期化子を使う
