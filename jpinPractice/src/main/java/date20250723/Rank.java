@@ -1,5 +1,2 @@
-package date20250723;
-
-public enum Rank {
-    BRONZE, Silver, Gold
+package date20250723;public enum Detail {
 }
