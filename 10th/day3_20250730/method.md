@@ -102,3 +102,165 @@ AにBを積み上げた時にはAのデータのコピーを渡せば良い(引�
 voidは引数を渡さない
 
 voidの後のが**メソッド**
+
+
+プログラミングとは：考えること
+
+## mainメソッド
+
+⭐️エントリーポイント
+
+⭐️メソッド呼び出しをする
+
+⭐️`static`を足すとエントリーポイントで`a();`を書くと出力される
+
+```java
+// mainがありませんエラー
+public class Main {
+	public void a() {
+		System.out.println(“a”);
+    }
+}
+```
+引数を渡さないと処理できない
+
+互換性のあるデータ(StringならString,intならint)
+
+受け取るための準備が必要
+
+バケツの上に積み上げたいのに引数を渡さないからエラー
+
+⇩ 修正
+```java
+// 複数のメソッドがあってどこから始めていいのか分からなくなる
+public class Main {
+	public void a() {
+		System.out.println(“a”);
+}
+	public void b() {
+		System.out.println(“b”);
+}
+	public void c() {
+	System.out.println(“c”);
+}
+public static void main(String[] args){
+    a();
+    b();
+    c();
+}
+}
+
+```
+
+実行したら
+
+```java
+a
+b
+c
+```
+
+### 同じクラスの場合
+
+`main`メソッドに`static`を使ったら`static`を使うこと
+
+`static`を使わないなら**インスタンス化**する必要がある
+
+◆引数を使う
+
+`String`型の引数を使う(宣言する)
+
+
+引数の宣言の型と受け取る型は、必ず合わせる
+
+
+```java
+public class Main {
+	public static void a(Strint str) {
+		System.out.println(“a”);
+}
+	public static void b(int num) {
+		System.oiut.println(“b”);
+}
+	public static void c(String a, int b) {
+	System.out.println(“c”);
+}
+public static void main(String[] args)
+	a(“hoge);
+	b(100);
+	c(“a”, 100);
+}
+```
+
+String型のstrをメモリに保存
+
+mainからhogeを渡す
+
+戻り値の型を宣言するのは**void**
+
+```java
+public static int calc(int a, int b) {
+	int result = a + b; // aに２、bに３が入る
+	return result;　// 5
+}
+public static void main String[] args) {
+	result = cal
+
+```
+
+```java
+
+public class Sample {
+	// このコピーをスタックフレームに積み上げる
+	public static void calc(int a, int b) {
+		if (b < 10) {
+			System.out.print(a * b);
+			calc(a, b + 1);
+		}
+	// ここまで
+	}
+	calcに３と1を渡すと？どうなる？
+	public static void main(String[] args) {
+		calc(3, 1);
+	}
+}
+```
+
+bが10より小さい間、３× 1が実行される
+```
+a = 3
+b = 1
+```
+
+**目の前のコードではなく、コピーが動いてる**
+
+新しいメソッドが作られるのは、新しいメソッドのコピーが作られる
+
+九九表を作る
+
+繰り返し文を使わず1つメソッドを追加すればできる
+
+何をしなきゃいけないかを分からなければできない
+
+エンジニアはアイディアMan！！
+
+```java
+public class Sample {
+	public static void calc(int a, int b) {
+		if (b < 10) {
+			System.out.print(a * b);
+			calc(a, b + 1);
+		}
+	}
+
+	public static void line(int a) {
+		if (a < 10) {
+			line(a + 1);
+		}
+	}
+
+	public static void main(String[] args) {
+		line(1); // 1の段
+	}
+}
+```
