@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65904c8b-ccb0-46e3-ad5d-189e0e76ba91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/date202508013/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/date202508013/Sample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10th/day5_20250813/Encapsulation.md" beforeDir="false" afterPath="$PROJECT_DIR$/../10th/day5_20250813/Encapsulation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10th/images/5−1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/date20250813/AccessModifierItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/date20250813/AccessModifierItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,51 +30,25 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/yoko/learning/jpin-note/jpinPractice",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "copyright"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yoko/learning/jpin-note/jpinPractice&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalDependencies&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.date202508013.Sample">
-    <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="date20250723.Array" />
+}</component>
+  <component name="RunManager" selected="Application.AccessModifierSample">
+    <configuration name="AccessModifierSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="date20250813.AccessModifierSample" />
       <module name="jpinPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="date20250723.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Case" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="date20250723.Case" />
-      <module name="jpinPractice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="date20250723.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ForEachLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="date20250723.ForEachLoop" />
-      <module name="jpinPractice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="date20250723.*" />
+          <option name="PATTERN" value="date20250813.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,21 +102,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="date20250813.Sample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="date20250813.Sample" />
+      <module name="jpinPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="date20250813.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Sample" />
-      <item itemvalue="Application.Array" />
-      <item itemvalue="Application.Case" />
-      <item itemvalue="Application.ForEachLoop" />
+      <item itemvalue="Application.date20250716.Sample" />
+      <item itemvalue="Application.AccessModifierSample" />
+      <item itemvalue="Application.date20250813.Sample" />
       <item itemvalue="Application.Loop" />
       <item itemvalue="Application.date202508013.Sample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AccessModifierSample" />
+        <item itemvalue="Application.date20250716.Sample" />
+        <item itemvalue="Application.date20250813.Sample" />
         <item itemvalue="Application.date202508013.Sample" />
         <item itemvalue="Application.Loop" />
-        <item itemvalue="Application.Case" />
-        <item itemvalue="Application.ForEachLoop" />
-        <item itemvalue="Application.Array" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +143,10 @@
       <updated>1753284746439</updated>
     </task>
     <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/jpinpractice$Loop.ic" NAME="Loop Coverage Results" MODIFIED="1753794041297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
