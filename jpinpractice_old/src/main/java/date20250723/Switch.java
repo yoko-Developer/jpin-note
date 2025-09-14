@@ -2,7 +2,6 @@ package date20250723;
 
 public class Switch {
     public static void main(String[] args) {
-        // switchでチェックするのは1
         int a = 1;
 
         String result = switch(a) {
