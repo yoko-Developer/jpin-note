@@ -1,4 +1,4 @@
-## 配列
+# 配列
 
 `int a = 10;`
 
@@ -18,8 +18,8 @@
 int型しか扱わない変数のarray
 であるため、配列しか入らない
 
-```
-nt [] array = new int[3];
+```java
+int [] array = new int[3];
 ```
 
 メモリ上ではどうなる？
@@ -32,16 +32,17 @@ arrayと添え字を指定する＝arrayの0番目、arrayの1番目
 
 ![](../images/2-1.jpeg)
 
-### for文のネスト
+## for文のネスト
 
 外側の繰り返し
 縦＝行（横の並びを何行出すか）
 
 
 従来のfor文は1個飛ばしで出力したい場合くらいしか使わない
-        for (int i = 0; i < array.length; i++) {
-//            System.out.println(array[i]);
-
+```java
+    for (int i = 0; i < array.length; i++) {
+//       System.out.println(array[i]);
+```
 
 `*` で三角を作る
 
@@ -53,7 +54,7 @@ arrayと添え字を指定する＝arrayの0番目、arrayの1番目
 
 4行目：***
 
-```
+```java
 package date20250723;
 
 public class Triangle {
@@ -124,11 +125,13 @@ breakを書かないと、一致したところ以下全てが表示される(�
 
 switch文: 処理の振り分け
 switch式: 値の結果を戻す(必ずどこにも引っかからないdefaltをつける)
+```java
 Stiring switch(a) {
     // Aを返す
     case 1 -> "A";
     case 2 -> 
 }
+```
 
 switch式は計算式
 
