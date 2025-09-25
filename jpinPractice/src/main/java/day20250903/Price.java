@@ -1,6 +1,5 @@
 package day20250903;
 
-
 public class Price {
 
     private final int amount;
@@ -21,8 +20,11 @@ public class Price {
         return this.amount;
     }
 
+    // 剥き出しのデータを使ってる
+    // データとルールをセットにするためにQuantityクラスを作る(Priceクラスを参考にする)
     public Price plus(Price other) {
 
+        // 通貨の種類が違う場合
         if (this.currency != other.currency) {
             System.out.println("invalid currency");
             System.exit(0);

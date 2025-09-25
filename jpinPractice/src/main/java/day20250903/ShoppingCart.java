@@ -1,6 +1,5 @@
 package day20250903;
 
-
 public class ShoppingCart {
 
     private Order[] orders = new Order[10];
@@ -17,10 +16,9 @@ public class ShoppingCart {
 
         for (int i = 0; i < this.index; i++) {
             Order order = this.orders[i];
-            result = result.plus(order.calcSubTotal());
+            result = result.plus(order.calcSubTotal()); // plusメソッドを使うことで異なる通貨の足し算をしなくて良い(円とドルなど)
         }
 
         return result;
     }
-
 }

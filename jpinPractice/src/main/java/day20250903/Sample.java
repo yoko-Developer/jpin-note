@@ -4,6 +4,7 @@ package day20250903;
 public class Sample {
     public static void main(String[] args) {
 
+        // int型をPrice型に変更する
         Item apple = new Item("apple", new Price(100, Currency.YEN));
         Item banana = new Item("banana", new Price(80, Currency.YEN));
         Item orange = new Item("orange", new Price(120, Currency.YEN));
