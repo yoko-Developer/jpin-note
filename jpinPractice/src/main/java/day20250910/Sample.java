@@ -20,6 +20,5 @@ public class Sample {
 
         Price result = cart.calcTotal();
         System.out.println(result.intValue());
-
     }
 }
