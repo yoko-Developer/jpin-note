@@ -16,6 +16,10 @@ public class Price {
         this.currency = currency;
     }
 
+    public static Price ofYen(int amount) {
+        return new Price(amount, Currency.YEN);
+    }
+
     public int intValue() {
         return this.amount;
     }

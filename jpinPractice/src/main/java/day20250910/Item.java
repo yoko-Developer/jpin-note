@@ -23,11 +23,11 @@ public class Item {
 
     // メソッドを追加、数量の数だけ足し算をすれば良い
     // これで掛け算ができるようになった
-    public Price multi(int qty) {
-        Price result = new Price(0, Currency.YEN);
-        for (int i = 0; i < qty; i++) {
-            result = result.plus(this.price);
-        }
-        return result;
+    public Price multi(Quantity qty) {
+//        Price result = new Price(0, Currency.YEN);
+//        for (int i = 0; i < qty; i++) {
+//            result = result.plus(this.price);
+//        }
+        return qty.calc(this.price);
     }
 }

@@ -17,6 +17,14 @@ public class Quantity {
         this.amount = amount;
     }
 
+    public Price calc(Price p) {
+        Price result = new Price(0, Currency.YEN);
+        for (int i = 0; i < this.amount; i++) {
+            result = result.plus(p);
+        }
+        return result;
+    }
+
     public int getAmount() {
         return amount;
     }

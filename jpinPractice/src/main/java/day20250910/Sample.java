@@ -5,13 +5,13 @@ public class Sample {
     public static void main(String[] args) {
 
         // int型をPrice型に変更する
-        Item apple = new Item("apple", new Price(100, Currency.YEN));
-        Item banana = new Item("banana", new Price(80, Currency.YEN));
-        Item orange = new Item("orange", new Price(120, Currency.YEN));
+        Item apple = new Item("apple", Price.ofYen(100));
+        Item banana = new Item("banana", Price.ofYen(80));
+        Item orange = new Item("orange", Price.ofYen(120));
 
-        Order order = new Order(apple, 3);
-        Order order2 = new Order(banana, 5);
-        Order order3 = new Order(orange, 2);
+        Order order = new Order(apple, new Quantity(3));
+        Order order2 = new Order(banana, new Quantity(5));
+        Order order3 = new Order(orange, new Quantity(2));
 
         ShoppingCart cart = new ShoppingCart();
         cart.add(order);
@@ -20,6 +20,5 @@ public class Sample {
 
         Price result = cart.calcTotal();
         System.out.println(result.intValue());
-
     }
 }

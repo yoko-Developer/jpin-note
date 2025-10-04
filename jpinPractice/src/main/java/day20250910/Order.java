@@ -4,9 +4,9 @@ public class Order {
 
     // 前回はqtyクラスを分けた
     private Item item;
-    private int qty;
+    private Quantity qty;
 
-    public Order(Item item, int qty) {
+    public Order(Item item, Quantity qty) {
         this.item = item;
         this.qty = qty;
     }
@@ -19,7 +19,7 @@ public class Order {
     public Item getItem() {
         return item;
     }
-    public int getQty() {
+    public Quantity getQty() {
         return qty;
     }
 }
