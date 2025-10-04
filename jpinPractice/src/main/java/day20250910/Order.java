@@ -1,7 +1,8 @@
-package day20250903;
+package day20250910;
 
 public class Order {
 
+    // 前回はqtyクラスを分けた
     private Item item;
     private int qty;
 
