@@ -17,7 +17,22 @@ public class Quantity {
         this.amount = amount;
     }
 
-    public int getAmount() {
-        return amount;
+    if(price ==null)
+
+    {
+        System.out.println("invalid price");
+        System.exit(0);
+    }
+
+    this.name =name;
+    this.price =price;
+}
+
+public Price multi(Quantity qty) {
+    Price result = new Price(0, Currency.YEN);
+    for (int i = 0; i < qty.getAmount(); i++) {
+        result = result.plus(this.price);
+    }
+    return result;
     }
 }

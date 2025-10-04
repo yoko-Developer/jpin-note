@@ -4,6 +4,7 @@ public class Price {
 
     private final int amount;
     private final Currency currency;
+    private static final Price ZERO_YEN = new Price(0, Currency.YEN);
 
     public Price(int amount, Currency currency) {
 
@@ -14,6 +15,15 @@ public class Price {
 
         this.amount = amount;
         this.currency = currency;
+    }
+
+    // 通称Factryメソッド
+    public static Price ofYen(int amount) {
+        return new Price(amount, Currency. YEN);
+    }
+
+    public static Price zeroYen() {
+        return ZERO_YEN;
     }
 
     public int intValue() {
