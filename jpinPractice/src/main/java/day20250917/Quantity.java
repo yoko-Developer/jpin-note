@@ -20,7 +20,7 @@ public class Quantity {
     }
 
     public Price calc(Price p) {
-        Price result = new Price(0, Currency.YEN);
+        Price result = new Price(0, null);
         for (int i = 0; i < this.amount; i++) {
             result = result.plus(p);
         }
