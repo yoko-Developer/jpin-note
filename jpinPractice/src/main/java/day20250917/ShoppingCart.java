@@ -15,7 +15,9 @@ public class ShoppingCart {
 
     public Price calcTotal() {
 
-        Price result = new Price(0, Currency.YEN);
+//        Price result = new Price(0, Currency.YEN);
+        // ofYenメソッドを使ってコンストラクタを呼び出す(F3で確認できる)
+        Price result = Price.ofYen(0);
 
         for (int i = 0; i < this.index; i++) {
             Order order = this.orders[i];
