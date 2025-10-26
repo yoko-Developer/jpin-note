@@ -5,6 +5,6 @@ public class Factory {
     public static A create() {
         // 戻り値型でポリモーフィズムを表現している
         // ここだけを変更することで、呼び出す側に影響がない
-        return new C();
+        return new B(); // Cに変更したらCが出力される(呼び出し側は変更しなくていい)
     }
 }

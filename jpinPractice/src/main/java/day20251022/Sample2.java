@@ -6,7 +6,8 @@ public class Sample2 {
         cal.setNum1(6);
 //        cal.setOperator(new Plus());
 //        cal.setOperator(new Minus());
-        cal.setOperator(new Divide());
+//        cal.setOperator(new Divide());
+        cal.setOperator(new Multiply());
         cal.setNum2(3);
         int result = cal.getResult();
         System.out.println(result);
