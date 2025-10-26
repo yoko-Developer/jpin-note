@@ -1,8 +1,9 @@
 package day20251022;
 
+// B側に継承関係がないとエラーになる
 public class B extends A {
 
-    // オーバーライド
+    // Aクラスではない差分をBクラスに追加
     @Override
             public void a() {
         System.out.println("B");
