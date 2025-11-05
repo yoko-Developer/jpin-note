@@ -1,4 +1,4 @@
-package day20251022;
+package date20251022;
 
 // インスタンスを請け負ってくれるクラス
 public class Factory {

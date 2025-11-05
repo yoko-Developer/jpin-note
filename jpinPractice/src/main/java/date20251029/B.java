@@ -1,10 +1,10 @@
-package day20251029;
+package date20251029;
 
 public class B extends D {
 
     @Override
     public void c() {
-        System.out.println("A");
+        System.out.println("C");
     }
 
     @Override

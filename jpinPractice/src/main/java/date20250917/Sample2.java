@@ -1,4 +1,4 @@
-package day20250917;
+package date20250917;
 
 // ShippingAddressクラスを使うSample2クラス
 // コンストラクタが長くなるが、staticを使えばアウタークラスのインスタンスを作る必要がなくなるのでこれでOK

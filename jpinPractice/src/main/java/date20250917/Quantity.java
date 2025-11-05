@@ -1,6 +1,4 @@
-package day20250917;
-
-import day20250917.Price;
+package date20250917;
 
 // Quantityクラスを追加
 public class Quantity {

@@ -1,4 +1,4 @@
-package day20250917;
+package date20250917;
 
 
 // Prefecture型に変更
