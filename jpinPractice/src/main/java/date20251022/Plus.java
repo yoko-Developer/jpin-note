@@ -1,4 +1,4 @@
-package day20251022;
+package date20251022;
 
 public class Plus extends Operator {
     @Override

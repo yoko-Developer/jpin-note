@@ -1,4 +1,4 @@
-package day20250910;
+package date20250910;
 
 // Quantityクラスを追加
 public class Quantity {

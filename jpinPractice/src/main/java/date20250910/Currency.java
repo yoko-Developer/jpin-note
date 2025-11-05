@@ -1,4 +1,4 @@
-package day20250910;
+package date20250910;
 
 public enum Currency {
     YEN, DOLLAR

@@ -1,4 +1,4 @@
-package day20250917;
+package date20250917;
 
 public class Price {
 

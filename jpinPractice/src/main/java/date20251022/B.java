@@ -1,4 +1,4 @@
-package day20251022;
+package date20251022;
 
 // B側に継承関係がないとエラーになる
 public class B extends A {

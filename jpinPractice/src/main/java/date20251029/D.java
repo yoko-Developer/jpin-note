@@ -1,4 +1,4 @@
-package day20251029;
+package date20251029;
 
 public abstract class D implements A {
 
@@ -8,7 +8,7 @@ public abstract class D implements A {
     }
 
     @Override
-    public void d () {
-        System.out.println("D");
+    public void b () {
+        System.out.println("B");
     }
 }
