@@ -8,7 +8,7 @@ public class Sample {
         return a * b;
     }
 
-    public int Minus(int a, int b) {
+    public int minus(int a, int b) {
         return a - b;
     }
 }
