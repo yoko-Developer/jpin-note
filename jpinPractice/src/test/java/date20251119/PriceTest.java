@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
- *
  * テストから作る
  * マイナスの価格は持てない
  * 上限は10万円未満とする
@@ -16,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  * nullとは足し算と引き算はできない
  * 足し算した結果上限を超えてはならない
  * 引き算をした結果加減を下回ってはならない
+ * 数量と掛け算ができる(小計を出すため)
  */
 public class PriceTest {
 
@@ -66,7 +66,7 @@ public class PriceTest {
     public void 足し算した結果上限を超えてはならない() {
         Price a = new Price(999999);
         Price b = new Price(1);
-        assertThrows(OutOfRangeException.class, () -> new Price(-1));
+        assertThrows(OutOfRangeException.class, () -> a.plus(b));
     }
 
     @Test
@@ -74,5 +74,14 @@ public class PriceTest {
         Price a = new Price(0);
         Price b = new Price(1);
         assertThrows(OutOfRangeException.class, () -> a.minus(b));
+    }
+
+    @Test
+    public void 数量と掛け算ができる() {
+        Price p = new Price(100);
+        Quantity q = new Quantity(3);
+
+        Price result = p.multi(q);
+        assertEquals(new Price(300), result);
     }
 }
