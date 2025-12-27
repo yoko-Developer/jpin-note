@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="date20251119.OrderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-12-04T12:35:48" hostname="MacBook-Pro-2.local" time="0.014">
+<testsuite name="date20251119.OrderTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-12-27T00:27:04" hostname="MacBook-Pro-2.local" time="0.025">
   <properties/>
-  <testcase name="小計を計算できる()" classname="date20251119.OrderTest" time="0.014"/>
+  <testcase name="商品はnullではダメ()" classname="date20251119.OrderTest" time="0.016"/>
+  <testcase name="減らせるかどうか確認できる()" classname="date20251119.OrderTest" time="0.001"/>
+  <testcase name="増やせるかどうか確認できる()" classname="date20251119.OrderTest" time="0.001"/>
+  <testcase name="数量はnullではダメ()" classname="date20251119.OrderTest" time="0.001"/>
+  <testcase name="注文数を1減らすことができる()" classname="date20251119.OrderTest" time="0.0"/>
+  <testcase name="小計を計算できる()" classname="date20251119.OrderTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

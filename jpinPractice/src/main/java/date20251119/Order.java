@@ -27,6 +27,9 @@ public class Order {
         return this.qty;
     }
 
+    public boolean canDecrease() {
+        return this.qty.canIncrease();
+    }
     public void decrease() {
         this.qty = this.qty.decrease();
     }
@@ -34,11 +37,6 @@ public class Order {
     public boolean canIncrease() {
         return this.qty.canIncrease();
     }
-
-    public boolean canDecrease() {
-        return false;
-    }
-
     public Price calcSubTotal() {
         return item.calcSubTotal(this.qty);
     }

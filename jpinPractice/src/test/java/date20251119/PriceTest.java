@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  * 価格同士が引き算できなければならない
  * nullとは足し算と引き算はできない
  * 足し算した結果上限を超えてはならない
- * 引き算をした結果加減を下回ってはならない
+ * 引き算をした結果下限を下回ってはならない
  * 数量と掛け算ができる(小計を出すため)
  */
 public class PriceTest {
@@ -70,7 +70,7 @@ public class PriceTest {
     }
 
     @Test
-    public void 引き算した結果加減を下回ってはならない() {
+    public void 引き算した結果下限を下回ってはならない() {
         Price a = new Price(0);
         Price b = new Price(1);
         assertThrows(OutOfRangeException.class, () -> a.minus(b));

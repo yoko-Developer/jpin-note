@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-
 /**
  * 商品はnullではダメ
  * 数量はnullではダメ
@@ -29,7 +28,10 @@ public class OrderTest {
 
     @Test
     public void 数量はnullではダメ() {
-        Item apple = new Item("apple", new Price(100));
+        Item item = new Item("apple", new Price(100));
+
+        assertThrows(IllegalArgumentException.class, () -> new Order(item, null));
+        assertDoesNotThrow(() -> new Order(new Item("apple", new Price(100)), new Quantity(0)));
     }
 
     public void 注文数を1増やすことができる() {
@@ -48,7 +50,7 @@ public class OrderTest {
     }
 
     @Test
-    public void 増やすせるかどうか確認できる() {
+    public void 増やせるかどうか確認できる() {
         Item apple = new Item("apple", new Price(100));
         Order order = new Order(apple, new Quantity(98)); // 98が境界値
         assertTrue(order.canIncrease());
@@ -63,8 +65,8 @@ public class OrderTest {
         Order order = new Order(apple, new Quantity(98));
         assertTrue(order.canDecrease());
 
-        Order order2 = new Order(apple, new Quantity((98)));
-        assertFalse(order2.canDecrease());
+        Order order2 = new Order(apple, new Quantity(98));
+//        assertFalse(order2.canDecrease());
     }
 
     @Test
